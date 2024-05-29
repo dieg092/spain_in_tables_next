@@ -7,10 +7,15 @@ export async function generateStaticParams() {
         category: tab.url
     }))
 }
+
+const findCategory = (category: string) => {
+    return TABS.find((tab) => tab.url === category)
+}
+
 export default function Category({ params }: PageProps) {
     const { category } = params
 
-    const TAB = TABS.find((tab) => tab.url === category)
+    const TAB = findCategory(category)
 
     if (!TAB) {
         notFound()
