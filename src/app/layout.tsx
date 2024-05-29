@@ -1,10 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import '@/styles/globals.css'
 import TopBar from '@/components/TopBar'
 import SideBar from '@/components/SideBar'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Fellix } from '@/styles/fonts'
+import '@/styles/globals.css'
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -17,18 +15,17 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html lang="es">
-            <body className={inter.className}>
+        <html lang="es" suppressHydrationWarning>
+            <body className={Fellix.className}>
                 <TopBar />
                 <SideBar />
-                <div
-                    id="detail"
+                <main
                     className={
                         'h-full flex ml-14 pt-20 p-6 min-h-screen md:ml-64 bg-neutral-100 dark:bg-neutral-900 transition-all duration-300'
                     }
                 >
-                    <main>{children}</main>
-                </div>
+                    {children}
+                </main>
             </body>
         </html>
     )

@@ -1,32 +1,5 @@
-import {
-    Book,
-    Euro,
-    Users,
-    Hospital,
-    UserPlus,
-    CloudSun,
-    Siren,
-    Scale,
-    Globe,
-    Cpu,
-    Home,
-    PieChart
-} from 'lucide-react'
-
-const tabs = [
-    { title: 'Inmigración', icon: <UserPlus /> },
-    { title: 'Economía', icon: <Euro /> },
-    { title: 'Salud Pública', icon: <Hospital /> },
-    { title: 'Derechos Civiles', icon: <Users /> },
-    { title: 'Cambio Climático', icon: <CloudSun /> },
-    { title: 'Educación', icon: <Book /> },
-    { title: 'Seguridad', icon: <Siren /> },
-    { title: 'Justicia', icon: <Scale /> },
-    { title: 'Política Exterior', icon: <Globe /> },
-    { title: 'Tecnología', icon: <Cpu /> },
-    { title: 'Vivienda', icon: <Home /> },
-    { title: 'Democracia', icon: <PieChart /> }
-]
+import { TABS } from '@/lib/tabs'
+import Link from 'next/link'
 
 function SideBar() {
     return (
@@ -40,11 +13,12 @@ function SideBar() {
                     </div>
                 </div>
             </li> */}
-                    {tabs.map((item, key) => {
+                    {TABS.map((item, key) => {
                         return (
                             <li key={key}>
-                                <a
-                                    href="#"
+                                <Link
+                                    href={`/${item.url}`}
+                                    title={item.title}
                                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-neutral-100 dark:hover:bg-neutral-600 text-neutral-900 hover:text-neutral-900 dark:text-white border-l-4 border-transparent hover:border-blue-500 dark:hover:border-blue-500 pr-6"
                                 >
                                     <span className="inline-flex justify-center items-center ml-4">
@@ -53,7 +27,7 @@ function SideBar() {
                                     <span className="ml-2 text-sm tracking-wide truncate">
                                         {item.title}
                                     </span>
-                                </a>
+                                </Link>
                             </li>
                         )
                     })}
