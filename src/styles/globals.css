@@ -10,6 +10,9 @@
     -ms-overflow-style: none; /* Internet Explorer and Edge */
     scrollbar-width: none; /* Firefox */
 }
+td {
+    text-align: center;
+}
 
 @layer components {
     .prose {
