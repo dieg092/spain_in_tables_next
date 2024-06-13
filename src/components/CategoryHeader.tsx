@@ -2,6 +2,7 @@ import SocialLinks from './SocialLinks'
 
 type TabType = {
     title: string
+    description: string
 }
 
 const CategoryHeader: React.FC<TabType> = (props) => {
@@ -12,7 +13,7 @@ const CategoryHeader: React.FC<TabType> = (props) => {
             </h1>
 
             <div className="text-gray-600 my-6 dark:text-neutral-300">
-                <p className="mb-9">{props?.description}</p>
+                <p className="mb-9">{props.description}</p>
 
                 <p className="mb-9">
                     💬 ¿Crees que puedes ayudarnos a crear contenido? ¡Únete a

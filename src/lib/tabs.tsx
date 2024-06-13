@@ -21,15 +21,40 @@ export const TABS = [
         url: 'inmigracion',
         icon: <UserPlus />
     },
-    { title: 'Economía', url: 'economia', icon: <Euro /> },
-    { title: 'Salud Pública', url: 'salud-publica', icon: <Hospital /> },
-    { title: 'Derechos Civiles', url: 'derechos-civiles', icon: <Users /> },
-    { title: 'Cambio Climático', url: 'cambio-climatico', icon: <CloudSun /> },
-    { title: 'Educación', url: 'educacion', icon: <Book /> },
-    { title: 'Seguridad', url: 'seguridad', icon: <Siren /> },
-    { title: 'Justicia', url: 'justicia', icon: <Scale /> },
-    { title: 'Política Exterior', url: 'politica-exterior', icon: <Globe /> },
-    { title: 'Tecnología', url: 'tecnologia', icon: <Cpu /> },
-    { title: 'Vivienda', url: 'vivienda', icon: <Home /> },
-    { title: 'Democracia', url: 'democracia', icon: <PieChart /> }
+    { title: 'Economía', description: '', url: 'economia', icon: <Euro /> },
+    {
+        title: 'Salud Pública',
+        description: '',
+        url: 'salud-publica',
+        icon: <Hospital />
+    },
+    {
+        title: 'Derechos Civiles',
+        description: '',
+        url: 'derechos-civiles',
+        icon: <Users />
+    },
+    {
+        title: 'Cambio Climático',
+        description: '',
+        url: 'cambio-climatico',
+        icon: <CloudSun />
+    },
+    { title: 'Educación', description: '', url: 'educacion', icon: <Book /> },
+    { title: 'Seguridad', description: '', url: 'seguridad', icon: <Siren /> },
+    { title: 'Justicia', description: '', url: 'justicia', icon: <Scale /> },
+    {
+        title: 'Política Exterior',
+        description: '',
+        url: 'politica-exterior',
+        icon: <Globe />
+    },
+    { title: 'Tecnología', description: '', url: 'tecnologia', icon: <Cpu /> },
+    { title: 'Vivienda', description: '', url: 'vivienda', icon: <Home /> },
+    {
+        title: 'Democracia',
+        description: '',
+        url: 'democracia',
+        icon: <PieChart />
+    }
 ]
