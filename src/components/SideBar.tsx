@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function SideBar() {
     return (
-        <div className="fixed flex flex-col top-14 left-0 w-14 hover:w-64 md:w-64 bg-white dark:bg-neutral-800 h-full text-neutral-900 dark:text-white z-10 transition-all duration-300 sidebar border-gray-200 dark:border-gray-700 border-r">
+        <div className="fixed flex flex-col top-14 left-0 w-14 md:w-64 bg-white dark:bg-neutral-800 h-full text-neutral-900 dark:text-white z-10 transition-all duration-300 sidebar border-gray-200 dark:border-gray-700 border-r">
             <div className="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow scrollbar-hide">
                 <ul className="flex flex-col py-4 space-y-1">
                     {/* <li className="px-5 hidden md:block">

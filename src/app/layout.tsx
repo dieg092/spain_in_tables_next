@@ -17,13 +17,13 @@ export default function RootLayout({
     return (
         <html lang="es" suppressHydrationWarning>
             <body
-                className={`${Fellix.className}  bg-neutral-100 dark:bg-neutral-900 transition-all duration-300`}
+                className={`${Fellix.className} bg-neutral-100 dark:bg-neutral-900 transition-all duration-300`}
             >
                 <TopBar />
                 <SideBar />
                 <main
                     className={
-                        'h-full ml-14 pt-20 pl-6 pr-12 min-h-screen md:ml-72 '
+                        'h-full ml-14 pt-20 px-6  min-h-screen md:ml-72 overflow-y-hidden'
                     }
                 >
                     {children}

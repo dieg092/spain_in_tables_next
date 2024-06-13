@@ -34,7 +34,9 @@ export default async function Category({ params }: PageProps) {
                     return <CategoryContent {...file} key={key} />
                 })
             ) : (
-                <p className="my-3">No hay contenido.</p>
+                <p className="my-3 dark:text-white text-neutral-900">
+                    No hay contenido.
+                </p>
             )}
         </>
     )
