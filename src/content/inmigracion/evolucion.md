@@ -1,11 +1,11 @@
 ---
-titulo: 'Evolución en %'
+titulo: 'Evolución de la inmigración'
 fecha: '13-07-2024'
 descripcion: 'Tabla desde 1998 a 2023 con datos obtenidos en el INE'
 objetivo: 'Obtener conocimiento de la evolución de la inmigración, extrangeros, nacionales y extrangeros nacionalizados en los últimos años, '
 ---
 
-## Evolución de la inmigración:
+## Porcentajes:
 
 | Año  | Nacionales (%) | Extranjeros (%) | Inmigrantes como % de Extranjeros | Extranjeros nacionalizados (%) |
 | ---- | -------------- | --------------- | --------------------------------- | ------------------------------ |
@@ -36,14 +36,44 @@ objetivo: 'Obtener conocimiento de la evolución de la inmigración, extrangeros
 | 2022 | 88.0           | 12.0            | 98.3                              | 0.2                            |
 | 2023 | 87.8           | 12.2            | 98.4                              | 0.2                            |
 
+## Personas:
+
+| Año  | Nacionales | Extranjeros | Inmigrantes como Extranjeros | Extranjeros nacionalizados |
+| ---- | ---------- | ----------- | ---------------------------- | -------------------------- |
+| 1998 | 38,572,800 | 627,200     | 588,314                      | 627                        |
+| 1999 | 38,789,000 | 711,000     | 671,184                      | 711                        |
+| 2000 | 38,884,600 | 915,400     | 876,038                      | 915                        |
+| 2001 | 38,680,000 | 1,320,000   | 1,239,480                    | 2,640                      |
+| 2002 | 38,501,200 | 1,898,800   | 1,817,152                    | 3,798                      |
+| 2003 | 38,270,400 | 2,529,600   | 2,408,179                    | 7,589                      |
+| 2004 | 38,316,000 | 2,884,000   | 2,800,364                    | 5,768                      |
+| 2005 | 38,064,000 | 3,536,000   | 3,412,240                    | 10,608                     |
+| 2006 | 37,842,000 | 4,158,000   | 4,033,260                    | 12,474                     |
+| 2007 | 37,910,000 | 4,590,000   | 4,461,480                    | 13,770                     |
+| 2008 | 38,098,000 | 4,902,000   | 4,774,548                    | 14,706                     |
+| 2009 | 37,929,600 | 5,270,400   | 5,186,074                    | 10,541                     |
+| 2010 | 38,193,000 | 5,307,000   | 5,174,325                    | 15,921                     |
+| 2011 | 38,324,900 | 5,375,100   | 5,246,098                    | 16,125                     |
+| 2012 | 38,588,100 | 5,311,900   | 5,179,103                    | 15,936                     |
+| 2013 | 38,940,300 | 5,159,700   | 4,984,270                    | 20,639                     |
+| 2014 | 39,559,900 | 4,740,100   | 4,607,377                    | 14,220                     |
+| 2015 | 40,095,400 | 4,504,600   | 4,369,462                    | 13,514                     |
+| 2016 | 40,499,800 | 4,400,200   | 4,263,794                    | 13,201                     |
+| 2017 | 40,770,400 | 4,429,600   | 4,292,282                    | 13,289                     |
+| 2018 | 40,814,600 | 4,585,400   | 4,493,692                    | 9,171                      |
+| 2019 | 40,810,100 | 4,889,900   | 4,796,992                    | 9,780                      |
+| 2020 | 40,940,000 | 5,060,000   | 4,968,920                    | 10,120                     |
+| 2021 | 41,021,800 | 5,278,200   | 5,183,192                    | 10,556                     |
+| 2022 | 41,008,000 | 5,592,000   | 5,496,936                    | 11,184                     |
+| 2023 | 41,178,200 | 5,721,800   | 5,630,251                    | 11,444                     |
+
 #### La tabla muestra:
 
--   Más extranjeros: De 1.6% en 1998 a 12.2% en 2023.
--   Menos nacionales: De 98.4% en 1998 a 87.8% en 2023.
--   Mayoría son inmigrantes: Entre 93.8% y 98.4% de los extranjeros son inmigrantes.
--   Pocos se nacionalizan: Solo entre 0.1% y 0.4% de extranjeros se hacen nacionales.
--   Recientes aumentos: Más extranjeros e inmigrantes, menos nacionales.
--   Cambios graduales: Las tendencias han sido constantes y sin grandes cambios.
+-   Más extranjeros: Del 1.6% al 12.2%.
+-   Menos nacionales: Del 98.4% al 87.8%.
+-   Entre 93.8% y 98.4% de los extranjeros son inmigrantes.
+-   Pocos se nacionalizan: Solo entre 0.1% y 0.4% de extranjeros se hacen nacionales cada año.
+-   Las tendencias han sido constantes y sin grandes cambios.
 
 #### Fuente:
 
