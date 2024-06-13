@@ -4,11 +4,41 @@ import { PageProps } from '../../../.next/types/app/[category]/page'
 import { getMdData } from '@/lib/md'
 import CategoryContent from '@/components/CategoryContent'
 import CategoryHeader from '@/components/CategoryHeader'
+import { DOMAIN } from '@/lib/utils'
+import { Metadata } from 'next'
 
 export async function generateStaticParams() {
     return TABS.map((tab) => ({
         category: tab.url
     }))
+}
+
+export async function generateMetadata({
+    params
+}: PageProps): Promise<Metadata> {
+    const category_slug = params.category
+    const category =
+        category_slug.charAt(0).toUpperCase() + category_slug.slice(1)
+
+    return {
+        title: {
+            default: 'España en tablas',
+            template: 'España en tablas',
+            absolute: 'España en tablas |  ' + category
+        },
+        description:
+            'Aquí puedes conocer el contexto de ' +
+            category +
+            ' en España con tablas sin sesgos y sin medios, ni bulos ni medios de comunicación de por medio.',
+        alternates: {
+            canonical: `${DOMAIN}/${category_slug}`
+        },
+        robots: {
+            index: true,
+            follow: true,
+            nocache: false
+        }
+    }
 }
 
 const findCategory = (category: string) => {
