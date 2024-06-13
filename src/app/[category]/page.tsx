@@ -1,6 +1,9 @@
 import { notFound } from 'next/navigation'
 import { TABS } from '@/lib/tabs'
 import { PageProps } from '../../../.next/types/app/[category]/page'
+import { getMdData } from '@/lib/md'
+import CategoryContent from '@/components/CategoryContent'
+import CategoryHeader from '@/components/CategoryHeader'
 
 export async function generateStaticParams() {
     return TABS.map((tab) => ({
@@ -12,18 +15,27 @@ const findCategory = (category: string) => {
     return TABS.find((tab) => tab.url === category)
 }
 
-export default function Category({ params }: PageProps) {
+export default async function Category({ params }: PageProps) {
     const { category } = params
 
-    const TAB = findCategory(category)
+    const tab = findCategory(category)
 
-    if (!TAB) {
+    if (!tab) {
         notFound()
     }
 
+    const mdData = await getMdData(tab.url)
+
     return (
         <>
-            <h1>{TAB.title}</h1>
+            <CategoryHeader {...tab} />
+            {mdData ? (
+                mdData.map((file, key) => {
+                    return <CategoryContent {...file} key={key} />
+                })
+            ) : (
+                <p className="my-3">No hay contenido.</p>
+            )}
         </>
     )
 }

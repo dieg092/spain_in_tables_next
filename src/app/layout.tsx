@@ -16,12 +16,14 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="es" suppressHydrationWarning>
-            <body className={Fellix.className}>
+            <body
+                className={`${Fellix.className}  bg-neutral-100 dark:bg-neutral-900 transition-all duration-300`}
+            >
                 <TopBar />
                 <SideBar />
                 <main
                     className={
-                        'h-full flex ml-14 pt-20 p-6 min-h-screen md:ml-64 bg-neutral-100 dark:bg-neutral-900 transition-all duration-300'
+                        'h-full ml-14 pt-20 pl-6 pr-12 min-h-screen md:ml-72 '
                     }
                 >
                     {children}

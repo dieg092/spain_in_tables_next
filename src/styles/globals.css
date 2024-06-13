@@ -10,3 +10,46 @@
     -ms-overflow-style: none; /* Internet Explorer and Edge */
     scrollbar-width: none; /* Firefox */
 }
+
+@layer components {
+    .prose {
+        @apply prose-lg;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+    }
+    .dark .prose {
+        @apply prose-dark;
+    }
+}
+
+@layer utilities {
+    .prose-dark h1,
+    .prose-dark h2,
+    .prose-dark h3,
+    .prose-dark h4,
+    .prose-dark h5,
+    .prose-dark h6 {
+        @apply text-white;
+    }
+    .prose-dark th {
+        @apply text-white;
+    }
+    .prose-dark p {
+        @apply text-gray-300;
+    }
+    .prose-dark li {
+        @apply text-gray-300;
+    }
+    .prose-dark a {
+        @apply text-blue-400;
+    }
+    .prose-dark table {
+        @apply text-gray-300;
+    }
+    .prose-dark th,
+    .prose-dark td {
+        @apply border-gray-600;
+    }
+}
