@@ -2,11 +2,11 @@ import { Metadata } from 'next'
 import CategoryContent from '@/components/CategoryContent'
 import CategoryHeader from '@/components/CategoryHeader'
 import { notFound } from 'next/navigation'
-import { PageProps } from '../../../.next/types/app/page'
 import { TABS } from '@/lib/tabs'
 import { getMdData } from '@/lib/md'
 import { DOMAIN } from '@/lib/utils'
-import Link from 'next/link'
+import CategoryIndex from '@/components/CategoryIndex'
+import { PageProps } from '../../../.next/types/app/[category]/page'
 
 export async function generateStaticParams() {
     return TABS.map((tab) => ({
@@ -61,30 +61,14 @@ export default async function Category({ params }: PageProps) {
     return (
         <>
             <CategoryHeader {...tab} />
-            <h2 className="text-4xl mt-12 mb-8 text-black dark:text-white underline">
-                ÍNDICE
-            </h2>
-            <ul className="list-disc grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 pl-12 pb-12 border-b border-gray-300 ">
-                {titles?.map((title, key) => {
-                    return (
-                        <li
-                            key={key}
-                            className="text-xl dark:text-white hover:underline"
-                        >
-                            <Link
-                                href={`#${title}`}
-                                className="fornt-extrabold pointer"
-                            >
-                                {title}
-                            </Link>
-                        </li>
-                    )
-                })}
-            </ul>
             {mdData ? (
-                mdData.map((file, key) => {
-                    return <CategoryContent {...file} key={key} />
-                })
+                <>
+                    <CategoryIndex titles={titles || []} />
+
+                    {mdData.map((file, key) => {
+                        return <CategoryContent {...file} key={key} />
+                    })}
+                </>
             ) : (
                 <p className="my-3 dark:text-white text-neutral-900">
                     No hay contenido.
