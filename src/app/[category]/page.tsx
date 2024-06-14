@@ -4,7 +4,6 @@ import CategoryHeader from '@/components/CategoryHeader'
 import { notFound } from 'next/navigation'
 import { TABS } from '@/lib/tabs'
 import { getMdData } from '@/lib/md'
-import { DOMAIN } from '@/lib/utils'
 import CategoryIndex from '@/components/CategoryIndex'
 import { PageProps } from '../../../.next/types/app/[category]/page'
 

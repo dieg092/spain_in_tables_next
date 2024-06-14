@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     metadataBase: new URL(DOMAIN),
     icons: '/images/favicon.png',
     openGraph: {
-        images: '/images/logo@300.webp'
+        images: '/images/logo@300.png'
     }
 }
 
