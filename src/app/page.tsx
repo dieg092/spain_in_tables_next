@@ -1,6 +1,5 @@
 import SocialLinks from '@/components/SocialLinks'
 import { readFile } from '@/lib/md'
-import { DOMAIN } from '@/lib/utils'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
