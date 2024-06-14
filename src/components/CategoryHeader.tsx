@@ -8,7 +8,7 @@ type TabType = {
 const CategoryHeader: React.FC<TabType> = (props) => {
     return (
         <>
-            <h1 className="text-4xl font-bold mb-1 dark:text-white">
+            <h1 className="text-4xl font-medium mb-1 dark:text-white">
                 {props.title}
             </h1>
 
