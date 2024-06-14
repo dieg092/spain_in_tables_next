@@ -9,7 +9,10 @@ const CategoryContent: React.FC<MDType> = ({
 }) => {
     return (
         <div className="dark:text-neutral-300 mb-10">
-            <h2 className="text-3xl font-bold mb-1 dark:text-white">
+            <h2
+                id={titulo}
+                className="text-3xl font-bold mb-1 dark:text-white pt-16"
+            >
                 {titulo}
             </h2>
             <div className="mb-6">{fecha}</div>

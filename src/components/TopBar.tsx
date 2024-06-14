@@ -13,6 +13,10 @@ function TopBar() {
                         src={'/images/logo.webp'}
                         alt="Logo de España en Tablas, peninusla con gráficos"
                         className="mr-4"
+                        style={{
+                            width: 'auto',
+                            height: 'auto'
+                        }}
                     />
                     ESPAÑA EN TABLAS
                 </Link>
