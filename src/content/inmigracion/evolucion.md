@@ -1,5 +1,5 @@
 ---
-titulo: 'Evolución de la inmigración'
+titulo: 'Evolución'
 fecha: '13-07-2024'
 descripcion: 'Datos de 1998 a 2023 con datos obtenidos en el INE'
 objetivo: 'Obtener conocimiento de la evolución de la inmigración, extrangeros, nacionales y extrangeros nacionalizados en los últimos años, '

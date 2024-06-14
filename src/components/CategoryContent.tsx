@@ -11,7 +11,7 @@ const CategoryContent: React.FC<MDType> = ({
         <div className="dark:text-neutral-300 mb-10">
             <h2
                 id={titulo}
-                className="text-3xl font-medium mb-1 dark:text-white pt-16"
+                className="text-4xl font-medium mb-1 dark:text-white pt-16"
             >
                 {titulo}
             </h2>

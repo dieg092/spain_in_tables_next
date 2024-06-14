@@ -9,7 +9,7 @@ const CategoryIndex: React.FC<CategoryIndexProps> = ({ titles }) => {
             <h2 className="text-4xl mt-12 mb-8 text-black dark:text-white underline">
                 ÍNDICE
             </h2>
-            <ul className="list-disc grid 2xl:grid-cols-3 xl:grid-cols-2 grid-cols-1 gap-2 pl-12 pb-12 border-b border-gray-300">
+            <ul className="list-disc grid 2xl:grid-cols-3 xl:grid-cols-2 grid-cols-1 gap-2 md:pl-12 pl-3 sm:pl-6 pb-12 border-b border-gray-300">
                 {titles?.map((title, key) => {
                     return (
                         <li
