@@ -9,10 +9,12 @@ const getSystemTheme = (): boolean => {
 
 export function useTheme() {
     const [darkMode, setDarkMode] = useState<boolean>(false)
+    const [mounted, setMounted] = useState<boolean>(false)
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
             setDarkMode(getSystemTheme())
+            setMounted(true)
 
             const matchMedia = window.matchMedia('(prefers-color-scheme: dark)')
 
@@ -34,7 +36,7 @@ export function useTheme() {
         } else {
             document.documentElement.classList.remove('dark')
         }
-    }, [darkMode])
+    }, [darkMode, mounted])
 
     return {
         darkMode,
