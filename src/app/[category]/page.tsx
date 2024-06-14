@@ -31,9 +31,6 @@ export async function generateMetadata({
             'Aquí puedes conocer el contexto de ' +
             category +
             ' en España con tablas sin sesgos y sin medios, ni bulos ni medios de comunicación de por medio.',
-        alternates: {
-            canonical: `${DOMAIN}/${category_slug}`
-        },
         robots: {
             index: true,
             follow: true,
