@@ -2,7 +2,7 @@
 titulo: 'Evolución'
 fecha: '13-07-2024'
 descripcion: 'Datos de 1998 a 2023 con datos obtenidos en el INE'
-objetivo: 'Obtener conocimiento de la evolución de la inmigración, extrangeros, nacionales y extrangeros nacionalizados en los últimos años, '
+objetivo: 'Obtener conocimiento de la evolución de la inmigración, extranjeros, nacionales y extranjeros nacionalizados en los últimos años, '
 ---
 
 ## Porcentajes:
@@ -77,6 +77,6 @@ objetivo: 'Obtener conocimiento de la evolución de la inmigración, extrangeros
 
 #### Fuente:
 
--   INE: [Intituto Nacional de Estadística](https://ine.es)
+-   INE: [Instituto Nacional de Estadística](https://ine.es)
 
 ---

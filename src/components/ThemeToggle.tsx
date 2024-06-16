@@ -4,7 +4,11 @@ import { Moon, Sun } from 'lucide-react'
 import { useTheme } from '@/hooks/useTheme'
 
 function DarkModeToggle() {
-    const { darkMode, setDarkMode } = useTheme()
+    const { mounted, darkMode, setDarkMode } = useTheme()
+
+    if (mounted) {
+        return null
+    }
 
     return (
         <button

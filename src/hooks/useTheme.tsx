@@ -39,6 +39,7 @@ export function useTheme() {
     }, [darkMode, mounted])
 
     return {
+        mounted,
         darkMode,
         setDarkMode
     }
