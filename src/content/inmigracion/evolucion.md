@@ -71,9 +71,8 @@ objetivo: 'Obtener conocimiento de la evolución de la inmigración, extranjeros
 
 -   Más extranjeros: Del 1.6% al 12.2%.
 -   Menos nacionales: Del 98.4% al 87.8%.
--   Entre 93.8% y 98.4% de los extranjeros son inmigrantes.
--   Pocos se nacionalizan: Solo entre 0.1% y 0.4% de extranjeros se hacen nacionales cada año.
--   Las tendencias han sido constantes y sin grandes cambios.
+-   Pocos se nacionalizan: Aproximadamente entre el 4.7% y el 5.0% de los extranjeros se nacionalizan cada año.
+-   Las tendencias han sido constantes y sin grandes cambios abruptos.
 
 #### Fuente:
 
