@@ -51,6 +51,9 @@ td {
     .prose-dark th {
         @apply text-white;
     }
+    .prose-dark strong {
+        @apply text-white;
+    }
     .prose-dark p {
         @apply text-gray-300;
     }
