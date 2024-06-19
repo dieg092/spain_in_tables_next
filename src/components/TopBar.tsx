@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function TopBar() {
     return (
-        <div className="fixed w-screen flex items-center justify-between h-14 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-white z-10 border-b dark:border-gray-700 transition-all duration-300 pr-3">
+        <div className="fixed w-screen flex items-center justify-between h-14 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-white z-10 border-b dark:border-gray-700 transition-all duration-300 md:pr-3">
             <div className="ml-5 rounded flex items-center max-w-xl mr-4 ">
                 <Link className="font-medium flex items-center " href="/">
                     <Image
